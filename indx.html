@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoSort Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>EcoSort</h2>
+    <a href="#">Dashboard</a>
+    <a href="#">Classify Waste</a>
+    <a href="#">History</a>
+    <a href="#">Analytics</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <h1>Dashboard Overview</h1>
+
+    <!-- Cards -->
+    <div class="cards">
+      <div class="card">
+        <p>Items Classified</p>
+        <h2 id="count">0</h2>
+      </div>
+      <div class="card">
+        <p>Recycled Today</p>
+        <h2 id="recycle">0</h2>
+      </div>
+      <div class="card">
+        <p>CO₂ Saved (kg)</p>
+        <h2 id="co2">0</h2>
+      </div>
+      <div class="card">
+        <p>Hazardous Items</p>
+        <h2 id="hazard">0</h2>
+      </div>
+    </div>
+
+    <!-- Search Box -->
+    <div class="search-box">
+      <input type="text" id="input" placeholder="e.g. plastic bottle, newspaper...">
+      <button onclick="classify()">Go</button>
+    </div>
+
+    <!-- Categories -->
+    <div class="categories">
+      <div class="category organic">Organic</div>
+      <div class="category paper">Paper</div>
+      <div class="category plastic">Plastic</div>
+      <div class="category glass">Glass</div>
+      <div class="category metal">Metal</div>
+      <div class="category hazard">Hazardous</div>
+    </div>
+
+    <!-- Table -->
+    <div class="table">
+      <h3>Recent Classifications</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Category</th>
+            <th>Bin</th>
+          </tr>
+        </thead>
+        <tbody id="tableData">
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
