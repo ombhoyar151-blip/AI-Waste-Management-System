@@ -1,0 +1,158 @@
+/* ===== Global ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0b1220;
+  color: #e2e8f0;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  width: 230px;
+  height: 100vh;
+  background: linear-gradient(180deg, #020617, #0f172a);
+  position: fixed;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  color: #22c55e;
+  margin-bottom: 30px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px;
+  margin: 10px 0;
+  color: #cbd5f5;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background: #22c55e;
+  color: black;
+}
+
+/* ===== Main ===== */
+.main {
+  margin-left: 250px;
+  padding: 25px;
+}
+
+.main h1 {
+  margin-bottom: 20px;
+}
+
+/* ===== Cards ===== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #1e293b, #334155);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  margin-top: 10px;
+  font-size: 28px;
+}
+
+/* ===== Search ===== */
+.search-box {
+  margin-top: 25px;
+  display: flex;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #1e293b;
+  color: white;
+}
+
+.search-box button {
+  padding: 12px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #22c55e;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background: #16a34a;
+}
+
+/* ===== Categories ===== */
+.categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.category {
+  padding: 18px;
+  border-radius: 14px;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.category:hover {
+  transform: scale(1.05);
+}
+
+/* Colors */
+.organic { background: #065f46; }
+.paper { background: #1e40af; }
+.plastic { background: #92400e; }
+.glass { background: #0e7490; }
+.metal { background: #78350f; }
+.hazard { background: #7f1d1d; }
+
+/* ===== Table ===== */
+.table {
+  margin-top: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1e293b;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th {
+  background: #334155;
+  padding: 12px;
+  text-align: left;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #475569;
+}
+
+tr:hover {
+  background: #334155;
+}
